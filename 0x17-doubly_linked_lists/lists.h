@@ -1,8 +1,8 @@
-#ifndef DOUBLY_LINKED_LISTS
-#define DOUBLY_LINKED_LISTS
-#include <stdlib.h>
-#include <string.h>
+#ifndef _LISTS_
+#define _LISTS_
+
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dlistint_s - doubly linked list
@@ -11,7 +11,7 @@
  * @next: points to the next node
  *
  * Description: doubly linked list node structure
- *
+ * for Holberton project
  */
 typedef struct dlistint_s
 {
