@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module implements a Rectangle object
+    Module containing the `Rectangle` class that inherits the `BaseGeometry`
+    class.
 """
 
 
@@ -8,12 +9,15 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
+    """Inherits from the `BaseGeometry` class.
+    """
+
     def __init__(self, width, height):
-        """initialisation
+        """Initializes the Rectangle instance.
 
         Args:
-            width (int): width
-            height (int): height
+            width (int): `width` of the `Rectangle` instance.
+            heigth (int): `height` of the `Rectangle` instance.
         """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
@@ -21,17 +25,11 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-        """area
-
-        Returns:
-            int: response
+        """Returns the area of the `Rectangle` instance.
         """
-        return self.__width * self.__height
+        return (self.__width * self.__height)
 
     def __str__(self):
-        """string
-
-        Returns:
-            str: string representation
+        """Returns a certain string representation.
         """
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)

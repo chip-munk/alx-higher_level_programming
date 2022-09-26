@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 """
-Returns the list of available attributes and methods of an object:
+    Module containing loopup function
 """
 
 
 def lookup(obj):
-    """retrun list of attributes and methods of `obj`
+    """ Returns all available attributes and methods of an object
 
     Args:
-        obj (Any): object
+        obj: An object
 
-    Returns:
-        list: list of attributes and members
+    Returns: A list of all available attribues and methods.
     """
     return dir(obj)

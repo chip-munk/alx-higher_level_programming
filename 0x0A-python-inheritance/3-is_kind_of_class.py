@@ -1,20 +1,17 @@
 #!/usr/bin/python3
 """
-This module implements a function that returns True
-if the object is an instance of, or if the object is
-an instance of a class that inherited from, the specified
-class; otherwise False.
+    Module containing the `is_kind_of_class` function.
 """
 
 
 def is_kind_of_class(obj, a_class):
-    """implementation
+    """Check if `obj` is an instance of a `a_class` or a child class that
+    inherits from it.
 
     Args:
-        obj (Any): object to check
-        a_class (type): type to check against
+        obj: An object.
+        a_class: A class.
 
-    Returns:
-        boolean: response
+    Returns: True if `obj` is an instance a `a_class`, otherwise False.
     """
     return isinstance(obj, a_class)
